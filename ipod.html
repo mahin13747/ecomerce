@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ipod</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="company">
+            <h2>Mahi-Ecommerce</h2>
+        </div>
+        <div class="products">
+            <ul>
+                <li>Laptop</li>
+                <li>Mobiles</li>
+                <li>AC</li>
+                <li>TV</li>
+                <li>Camera</li>
+                <li>Watch</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-detail">
+        <div class="pro-left">
+            <img src="assets/Arrival/arr-ipod.jpg" alt="">
+        </div>
+        <div class="pro-right">
+            <h4>
+                boAt Airpodes 131/Wireless with upto 6o hours,playback 13...
+            </h4>
+            <ul>
+                <li>Deal Price: ₹2,500</li>
+                <li>Offer Price: ₹1000</li>
+                <li>MRP: ₹999(Inclusive of all taxes)</li>
+                <li>You Save: 40%(₹1,500)</li>
+            </ul>
+            <div class="card">
+                <span onclick="gfg(1)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(2)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(3)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(4)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(5)"
+                      class="star">★
+                </span>
+                <h3 id="output">
+                      Rating is: 0/5
+                  </h3>
+            </div>
+            <div class="pro-button">
+                <button class="addBtn">ADD TO CART</button>
+                <!-- <button class="buyBtn">BUY NOW</button> -->
+                <button class="Changeclr">Change Color</button>
+
+                <div class="quantity-selector">
+                    <h3 style="color: blueviolet;">Choose Quantity:</h3>
+                    <button onclick="decreaseQuantity()" style="padding: 5px;">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10" style="padding: 5px; text-align: center;">
+                    <button onclick="increaseQuantity()" style="padding: 5px;">+</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cart-sidebar"></div>
+        <h2>Cart</h2>
+        <ul id="cart-list"></ul>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
