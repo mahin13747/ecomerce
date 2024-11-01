@@ -85,4 +85,9 @@ function decreaseQuantity() {
     if (quantity.value > 1) quantity.value--;
 }
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navbarMenu = document.querySelector('.products ul');
 
+hamburgerMenu.addEventListener('click', () => {
+  navbarMenu.classList.toggle('visible');
+});
